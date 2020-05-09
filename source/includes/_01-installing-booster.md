@@ -106,6 +106,15 @@ aws_access_key_id = <YOUR ACCESS KEY ID>
 aws_secret_access_key = <YOUR SECRET ACCESS KEY>
 ```
 
+AWS also needs you to specify a region to deploy your application. See the available [`available regions in AWS`](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions) and choose the most suitable for you. For this example, we are using "eu-west-1". Once you have selected your region, add it to the previous file.
+
+```ini
+[default]
+aws_access_key_id = <YOUR ACCESS KEY ID>
+aws_secret_access_key = <YOUR SECRET ACCESS KEY>
+region = eu-west-1
+```
+
 Now create a folder called `.aws` under your home folder, and a file called
 `credentials` inside of it.
 
